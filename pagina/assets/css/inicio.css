@@ -1,0 +1,22 @@
+.logo{
+    height: 120px;
+    width: 100px;
+    padding-top: 5px;
+    
+}
+
+.form-styled {
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  
+  .fondo{
+      background-color: #17fce9a8;
+  }
+  
+  .text{
+    color: #000000;
+  }

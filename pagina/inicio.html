@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Empresa</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/inicio.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img class="logo" src="/assets/img/logo.png" alt="" srcset=""><a class="navbar-brand" href="#">Nombre de la Empresa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="fondo text-center py-5">
+        <div class="blockquote  container">
+           <h1>Transpologic </h1>
+            <p class="lead">Slogan de la empresa</p>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 1</h5>
+                            <p class="card-text">Descripción breve del servicio 1.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio1">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 2</h5>
+                            <p class="card-text">Descripción breve del servicio 2.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio2">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 3</h5>
+                            <p class="card-text">Descripción breve del servicio 3.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalServicio3">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Sección Nosotros -->
+    
+<section class=" py-5">
+    <div class="container">
+        <h2 class="text-center">Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vestibulum erat. Curabitur euismod, nisi vel consectetur interdum, nisl nisi cursus leo, nec varius justo nunc non urna. Donec sit amet ligula at nulla facilisis tincidunt. Integer nec odio nec nulla facilisis tincidunt. Sed at libero nec ligula fermentum aliquam. Proin nec justo nec nulla facilisis tincidunt. Sed at libero nec ligula fermentum aliquam.</p>
+    </div>
+</section>
+
+<!-- Sección Testimonios -->
+<section class="fondo py-5">
+    <div class="container">
+        <h2 class="text-center">Testimonios</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">Testimonio de cliente 1.</p>
+                        <footer class="blockquote-footer">Cliente 1</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">Testimonio de cliente 2.</p>
+                        <footer class="blockquote-footer">Cliente 2</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">Testimonio de cliente 3.</p>
+                        <footer class="blockquote-footer">Cliente 3</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contáctanos</h2>
+        <form id="contactForm" class="form-styled">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+
+    
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" class="text-white">Política de Privacidad</a> | 
+                <a href="#" class="text-white">Términos de Servicio</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modales de Servicios -->
+    <!-- Modal Servicio 1 -->
+    <div class="modal fade" id="modalServicio1" tabindex="-1" aria-labelledby="modalServicio1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio1Label">Servicio 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum rem quos aliquam enim facere numquam ducimus ipsam magnam expedita perferendis autem earum commodi ratione velit sequi, esse et. Magni.</p>
+                     Descripción detallada del servicio 1.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Servicio 2 -->
+    <div class="modal fade" id="modalServicio2" tabindex="-1" aria-labelledby="modalServicio2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio2Label">Servicio 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum rem quos aliquam enim facere numquam ducimus ipsam magnam expedita perferendis autem earum commodi ratione velit sequi, esse et. Magni.</p>
+                    Descripción detallada del servicio 2.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal Servicio 3 -->
+        <div class="modal fade" id="modalServicio3" tabindex="-1" aria-labelledby="modalServicio3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalServicio3Label">Servicio 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum rem quos aliquam enim facere numquam ducimus ipsam magnam expedita perferendis autem earum commodi ratione velit sequi, esse et. Magni.</p>
+
+                        Descripción detallada del servicio 3.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Scripts de Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+
+    
